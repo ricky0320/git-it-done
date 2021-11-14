@@ -32,12 +32,11 @@ var getRepoIssues = function(repo) {
                 displayWarning(repo);
             }
           });
-        }
-        else {
+        } else {
           document.location.replace("./index.html");
         }
       });
-}
+};
 
 var displayIssues = function(issues) {
     if (issues.length === 0) {
@@ -68,6 +67,7 @@ var displayIssues = function(issues) {
         } else {
             typeEl.textContent = "(Issue)";
         }
+
         // append to container
         issueEl.appendChild(typeEl);
 
